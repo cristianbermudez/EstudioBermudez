@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+  }
 
 /* Inicio de Formato de Header */
 header {
@@ -18,9 +18,8 @@ header {
 .logoheader {
   display: flex;
   justify-content: center;
-  align-items: center;
-
-}
+  align-items: left;
+  }
 
 nav {
   display: flex;
@@ -39,8 +38,8 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
+  transition: all 1s;
   color: whitesmoke;
-  transition: all 0.5s;
   padding: 0px 20px;
   font-size: 20px
 }
@@ -248,11 +247,12 @@ input[type=reset]:hover {
   display: grid;
   text-align: center;
   grid-template-areas:
-    "Servicio1 Servicio2"
+    "Servicio1 Servicio1"
     "Servicio3 Servicio4"
   ;
   grid-gap: 1rem;
 }
+
 
 .container > div {
   background-color: whitesmoke;
@@ -263,30 +263,6 @@ font-size: 40px;
 color: #3DACDD;
 padding: 20px;
 }
-
-/* .Servicio1 i,
-.Servicio2 i,
-.Servicio3 i,
-.Servicio4 i {
-  font-size: 40px;
-  color: #3DACDD;
-  padding: 20px;
-}
-
-.Servicio1,
-.servicio1 h3,
-.Servicio1 .cta,
-.Servicio2,
-.servicio2 h3,
-.Servicio2 .cta,
-.Servicio3,
-.servicio3 h3,
-.Servicio3 .cta,
-.Servicio4,
-.servicio4 h3,
-.Servicio4 .cta {
-  color: rgb(2, 128, 144);
-  background-color: whitesmoke; */
 
 
 /* fin Grid Services */
@@ -378,6 +354,7 @@ footer {
   width: 40%;
 }
 /* Fin de Footer */
+
 
 /* transformaciones para Celular */
 @media only screen and (max-width: 480px) {
