@@ -207,28 +207,6 @@ footer {
 /* transformaciones para Celular */
 @media only screen and (max-width: 480px) {
 
-  /* nav ul {
-    flex-direction: column;
-    justify-items: center;
-  } */
-
-  /* nav ul ul {
-    padding: 50px 0px;
-  } */
-
-  /* .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-      "Servicio1"
-      "Servicio2"
-      "Servicio3"
-      "Servicio4"
-    ;
-  } */
-
-
   footer {
     display: grid;
     grid-template-rows: 1fr 1fr;
