@@ -46,6 +46,11 @@ border-color: #3D5B94;
 
 }
 
+.carousell-item--mdificado {
+  height: 600px;
+}
+
+
 /* Fin de Formato de Header */
 
 /* Inicio de Formato contenido Main */
