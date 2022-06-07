@@ -6,12 +6,6 @@
 
 
 /* Inicio de Formato de Menu */
-.logoheader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
 
 .navbar--modificada{
   background-color: rgb(5, 102, 141);
@@ -24,8 +18,8 @@ border-color: #3D5B94;
 }
 
 .card--modificado{
-  background-color: whitesmoke;
   align-items:center;
+  background-color: whitesmoke;
 }
 
 .dropdown-item--modificado{
@@ -33,7 +27,6 @@ border-color: #3D5B94;
 }
 
 .dropdown-item.active, .dropdown-item:active {
-  /* color: #fff; */
   background-color:#3DACDD;
 }
 
@@ -46,83 +39,37 @@ border-color: #3D5B94;
 
 }
 
-.carousell-item--mdificado {
-  height: 600px;
+.carousel-dark .carousel-caption{
+  color:whitesmoke;
 }
-
 
 /* Fin de Formato de Header */
 
 /* Inicio de Formato contenido Main */
 
-.content {
-  font-family: 'Open Sans', sans-serif;
-  /* margin: 2% 7%; */
-  background-color: whitesmoke;
-  text-align: center;
-  color: rgb(2, 128, 144);
-}
-
 main {
   font-family: 'Open Sans', sans-serif;
   color: rgb(2, 128, 144);
   text-align: center;
-  grid-area: section;
-    
 } 
 
-main h1 {
-  font-size: 40px;
+section {
+  color: rgb(2, 128, 144);
+}
+
+
+main h1,h2,h3,h6,p {
   padding: 1% 7%;
   display: flex;
   justify-content: center;
-}
-
-main h2 {
-  padding: 1% 7%;
-  display: flex;
-  justify-content: center;
-}
-main h3 {
-  padding: 1% 7%;
-  display: flex;
-}
-
-
-/* border: solid 1px black; */
-main p {
-  padding: 1% 7%;
-  display: flex;
-  font-size: 18px;
+  color: rgb(2, 128, 144);
 }
 
 
 .lista_section {
-  font-family: 'Open Sans', sans-serif;
-  /* margin: 2% 7%; */
   text-align: left;
-  background-color: whitesmoke;
-  background-color: whitesmoke;
 }
-
 /* Fin de Formato contenido Main */
-
-/* inicio Formulario de Contacto */
-
-.contacto {
-  background-color: whitesmoke;
-}
-
-.parrafos--left {
-  font-size: 22px;
-  font-family: 'Open Sans', sans-serif;
-  color: rgb(2, 128, 144);
-  padding: 20px;
-  display: flex;
-  justify-content: left;
-}
-
-
 
 /* Inicio de Footer */
 
@@ -130,35 +77,14 @@ footer {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
-  font-family: 'Open Sans', sans-serif;
-  width: 100%;
-  display: flex;
-  margin: 0;
   height: 40px;
   background-color: #02C39A;
-}
-
-.copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
-  width: 50%;
-  float: left;
-  @media (max-width: 600px);
   width: 100%;
+  text-align: center;
 }
 
-.copyright p {
-  color: whitesmoke;
-  font-size: 0.7em;
-  text-align: center;
-  text-transform: capitalize;
-  letter-spacing: 1px;
-  /* line-height: 40px; */
-
-  @media (max-width: 600px) {
+.copyright  {
+    @media (max-width: 600px) {
     text-align: center;
     padding: 0;
   }
@@ -202,34 +128,10 @@ footer {
   width: 20%;
 }
 
-.support {
-  background-color: #6dcd9a;
-  font-size: 0.8em;
-  width: 40%;
-}
 /* Fin de Footer */
 
-/* transformaciones para Celular */
-@media only screen and (max-width: 480px) {
-
-  footer {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;
-    width: 100%;
-    margin: 1px 0;
-  }
-
-}
-
-/* transformaciones para Tablet */
+/* transformaciones para Tablet y celular */
 @media only screen and (max-width: 768px) {
-  header {
-    display: grid;
-    grid-template-columns: 1fr;
-    background-color: rgb(5, 102, 141);
-    color: whitesmoke
-  }
 
   footer {
     display: grid;
