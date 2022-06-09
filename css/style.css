@@ -35,6 +35,9 @@
 section {
   color: #028090; }
 
+h4 {
+  color: rgba(17, 15, 15, 0.7); }
+
 main h1,
 h2,
 h3,
@@ -87,7 +90,7 @@ footer {
 /* transformaciones para Tablet y celular */
 @media (max-width: 768px) {
   html {
-    font-size: 70%; }
+    font-size: 80%; }
   footer {
     display: grid;
     grid-template-rows: 1fr 1fr;
