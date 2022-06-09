@@ -1,0 +1,21 @@
+/* transformaciones para Tablet y celular */
+@media  (max-width: 768px) {
+
+    footer {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: 1px 0;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #02C39A;
+        width: 50%;
+        float: right;
+        width: 100%;
+    }
+}

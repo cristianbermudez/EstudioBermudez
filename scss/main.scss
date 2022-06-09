@@ -1,0 +1,126 @@
+@import "./components/variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Inicio de Formato de Menu */
+
+.navbar--modificada {
+    background-color: $navbar-color;
+}
+
+.btn-primary--modificado {
+    color: whitesmoke;
+    background-color: #3DACDD;
+    border-color: #3D5B94;
+}
+
+.card--modificado {
+    align-items: center;
+    background-color: whitesmoke;
+    width: 100%;
+}
+
+.dropdown-item--modificado {
+    color: rgba(255, 255, 255, .55);
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: #3DACDD;
+}
+
+.dropdown-menu--modificado {
+    background-color: $navbar-color;
+}
+
+.carousel-dark .carousel-caption {
+    color: whitesmoke;
+}
+
+/* Fin de Formato de Header */
+
+/* Inicio de Formato contenido Main */
+
+section {
+    color: $principal-text-color;
+}
+
+
+main h1,
+h2,
+h3,
+h5,
+h6,
+p,
+i {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding: 1% 7%;
+    display: flex;
+    justify-content: center;
+    color: $principal-text-color;
+    width: 100%;
+}
+
+
+.lista_section {
+    text-align: left;
+}
+
+/* Fin de Formato contenido Main */
+
+/* Inicio de Footer */
+
+footer {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 50px;
+    background-color: #02C39A;
+    width: 100%;
+
+
+    .copyright {
+
+        a {
+            display: flex;
+            color: whitesmoke;
+            text-decoration: none;
+            justify-content: center;
+        }
+    }
+
+    .social {
+
+        a {
+            font-size: 1.4em;
+            float: left;
+            line-height: 50px;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            width: 20%;
+        }
+
+        .linked {
+            background-color: #1E83AE;
+        }
+
+        .tweet {
+            background-color: #3DACDD;
+        }
+
+        .face {
+            background-color: #3D5B94;
+        }
+    }
+}
+
+/* Fin de Footer */
+
+@import "./components/mediaQueries";

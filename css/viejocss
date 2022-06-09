@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+/* Inicio de Formato de Menu */
+
+.navbar--modificada{
+  background-color: rgb(5, 102, 141);
+}
+
+.btn-primary--modificado{
+color: whitesmoke;
+background-color: #3DACDD;
+border-color: #3D5B94;
+}
+
+.card--modificado{
+  align-items:center;
+  background-color: whitesmoke;
+}
+
+.dropdown-item--modificado{
+  color:rgba(255,255,255,.55);
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color:#3DACDD;
+}
+
+.dropdown-menu--modificado{
+  background-color: rgb(5, 102, 141);
+}
+
+.carousel-dark .carousel-caption{
+  color:whitesmoke;
+}
+
+/* Fin de Formato de Header */
+
+/* Inicio de Formato contenido Main */
+
+main {
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(2, 128, 144);
+  text-align: center;
+} 
+
+section {
+  color: rgb(2, 128, 144);
+}
+
+
+main h1,h2,h3,h6,p {
+  padding: 1% 7%;
+  display: flex;
+  justify-content: center;
+  color: rgb(2, 128, 144);
+}
+
+
+.lista_section {
+  text-align: left;
+}
+/* Fin de Formato contenido Main */
+
+/* Inicio de Footer */
+
+footer {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  height: 60px;
+  background-color: #02C39A;
+  width: 100%;
+  text-align: center;
+}
+
+.copyright  {
+    @media (max-width: 600px) {
+    text-align: center;
+    padding: 0;
+  }
+}
+
+
+
+.social a {
+  float: left;
+  line-height: 40px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.linked {
+  background-color: #1E83AE;
+  font-size: 1.2em;
+  width: 20%;
+}
+
+.face {
+  background-color: #3D5B94;
+  font-size: 1.2em;
+  width: 20%;
+}
+
+.tweet {
+  background-color: #3DACDD;
+  font-size: 1.2em;
+  width: 20%;
+}
+
+/* Fin de Footer */
+
+/* transformaciones para Tablet y celular */
+@media only screen and (max-width: 768px) {
+
+  footer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: 1px 0;
+  }
+  
+  .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #02C39A;
+  width: 50%;
+  float: right;
+  width: 100%;
+  }
+}
