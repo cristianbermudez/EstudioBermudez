@@ -86,6 +86,8 @@ footer {
 /* Fin de Footer */
 /* transformaciones para Tablet y celular */
 @media (max-width: 768px) {
+  html {
+    font-size: 70%; }
   footer {
     display: grid;
     grid-template-rows: 1fr 1fr;
