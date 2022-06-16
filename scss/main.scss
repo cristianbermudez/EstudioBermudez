@@ -1,4 +1,8 @@
 @import "./components/variables";
+@import "./components/extends";
+@import "./components/maps";
+@import "./components/mixins";
+@import "./components/mixins";
 
 * {
     margin: 0;
@@ -19,9 +23,8 @@
 }
 
 .card--modificado {
-    align-items: center;
-    background-color: whitesmoke;
-    width: 100%;
+    border-radius: 0.5cm;
+   @extend %mods--card--modificado;
 }
 
 .dropdown-item--modificado {
@@ -60,18 +63,11 @@ h5,
 h6,
 p,
 i {
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    padding: 1% 7%;
-    display: flex;
-    justify-content: center;
-    color: $principal-text-color;
-    width: 100%;
+    @include mainTextFormat ('Open Sans', sans-serif, center, 1%, 7%, block, center, $principal-text-color, 100%);
 }
 
-
 .lista_section {
-    text-align: left;
+    @include mainTextFormat ($tAling: left);    
 }
 
 /* Fin de Formato contenido Main */
@@ -79,12 +75,12 @@ i {
 /* Inicio de Footer */
 
 footer {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
-    height: 50px;
-    background-color: #02C39A;
-    width: 100%;
+    display: map-get($footer , display);
+    grid-template-rows: map-get($footer, grid-template-rows);
+    grid-template-columns: map-get($footer , grid-template-columns);
+    height: map-get($footer , height);
+    background-color: map-get($footer, background-color);
+    width: map-get($footer, width);
 
 
     .copyright {

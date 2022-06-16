@@ -1,0 +1,9 @@
+@mixin mainTextFormat($fFamily: 'Open Sans', $fFamilyT: sans-serif, $tAling: center, $paV: 1%, $paH: 7%, $disp: flex, $just: center, $color: rgb(2, 128, 144) , $width: 100% ) {
+    font-family: $fFamily $fFamilyT;
+    text-align: $tAling;
+    padding: $paV $paH;
+    display: $disp;
+    justify-content: $just;
+    color: $color;
+    width: $width;
+}
